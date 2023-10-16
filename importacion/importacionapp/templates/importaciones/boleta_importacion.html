@@ -1,0 +1,22 @@
+<!-- es una plantilla que extiende el base.html y muestra una página específica solo para la boleta de importación. -->
+{% extends "base.html" %}
+
+{% block titulo %}  boleta importacion {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Boleta importacion 
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos de la importacion</h4>
+       {% include 'importaciones/boleta.html' %}
+
+    </div>
+    <div class="card-footer text-muted">
+      
+    </div>
+</div>
+
+{% endblock %}

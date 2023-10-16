@@ -1,0 +1,22 @@
+<!-- Plantilla para la página de inicio. -->
+{% extends "base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block contenido %}
+<div class="container">
+    <div class="row align-items-center" style="background-color: #F3EFEF; padding: 50px;">
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-dark bg-light border rounded-3">
+                <h2>Bienvenido a las importaciones desde China</h2>
+                <p>Comienza a gestionar tus importaciones de manera sencilla y eficiente.</p>
+                <a class="btn btn-primary" href="{% url 'importaciones' %}" role="button">Ver lista de importaciones</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

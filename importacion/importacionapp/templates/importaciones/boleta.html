@@ -1,0 +1,44 @@
+
+
+<!-- esta es la plantilla para mostrar los detalles de las boletas de la importación. -->
+
+
+
+<div class="card">
+    <div class="card-header">
+       
+    </div>
+    <div class="card-body">
+        <h4 class="card-title"></h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Total de la importación</th>
+                    <th scope="col">Costo del envio (CLP)</th>
+                    <th scope="col">CIF</th>
+                    <th scope="col">Tasa de Aduana</th>
+                    <th scope="col">IVA</th>
+                    <th scope="col">Impuestos</th>
+                    <th scope="col">Total de la compra</th>
+                    <th scope="col">Valor en dólares</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ boleta.total_importacion }}</td>
+                    <td>{{ boleta.costo_envio }}</td>
+                    <td>{{ boleta.cif }}</td>
+                    <td>{{ boleta.tasa_aduana }}</td>
+                    <td>{{ boleta.iva }}</td>
+                    <td>{{ boleta.impuestos }}</td>
+                    <td>{{ boleta.total_compra }}</td>
+                    <td>{{ boleta.valor_dolares }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer text-muted">
+        <a class="btn btn-warning" href="{% url 'importaciones' %}" role="button">Cancelar</a>
+    </div>
+</div>
+
